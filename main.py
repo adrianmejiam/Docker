@@ -11,10 +11,10 @@ import cherrypy
 from cherrypy.lib import static
 from qobuz_dl.core import QobuzDL
 
-main-app = Flask(__name__)
+main.app = Flask(__name__)
 @myain.app.route('/')
-def hello_world():
-    return 'Hello World!'
+def main.py():
+    return 'main.py'
 if __name__ == '__main__':
     main.app.run()
 
