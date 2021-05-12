@@ -6,10 +6,17 @@ import shutil
 import uuid
 import re
 from io import StringIO
-
+from flask import Flask 
 import cherrypy
 from cherrypy.lib import static
 from qobuz_dl.core import QobuzDL
+
+main-app = Flask(__name__)
+@myain.app.route('/')
+def hello_world():
+    return 'Hello World!'
+if __name__ == '__main__':
+    main.app.run()
 
 # Default Variables
 TMP_DIR = '/tmp/qobuz/'
